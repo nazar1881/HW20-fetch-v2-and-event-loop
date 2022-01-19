@@ -2,14 +2,12 @@ let postUrl = 'https://jsonplaceholder.typicode.com/posts';
 let title = document.getElementById('title');
 let description = document.getElementById('description');
 let listOfComments = document.getElementById('coments-list');
-let writeComment = document.getElementById('input-comment');
-let addCommentBtn = document.getElementById('add-comment-btn');
 
 class Post {
     constructor(postTitle, postDescription, postComments, id) {
         this.postTitle = postTitle;
         this.postDescription = postDescription;
-        this.postComments = postComments;  
+        this.postComments = postComments;
         this.id = id;
     }
 
@@ -64,12 +62,17 @@ class Post {
         }
         this.postComments.innerHTML = commentsList;
     }
+
+    init() {
+        this.showPost();
+        this.showComments();
+    }
 }
 
 let post1 = new Post(title, description, listOfComments, 1);
 
-post1.showPost();
-post1.showComments();
+post1.init();
+
 
 //////////////////////////Second task/////////////////////////////
 
