@@ -1,0 +1,31 @@
+body {
+    background: linear-gradient(85deg, #EECFBA, #C5DDE8);
+}
+.conteiner {
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+.add-comment-btn {
+    display: block;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid lightskyblue;
+    border-radius: 5px;
+    background-color: lightskyblue;
+    color: white;
+    font-weight: 700;
+}
+.add-comment-btn:hover {
+    transition: .5s;
+    color: lightskyblue;
+    background-color: white;
+}
+.comments-item {
+    margin-top: 10px;
+}
+.input-comment {
+    resize: none;
+}
