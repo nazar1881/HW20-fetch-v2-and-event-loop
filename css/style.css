@@ -8,6 +8,9 @@ body {
     padding: 15px;
     border-radius: 10px;
 }
+.comments-list {
+    max-width: 800px;
+}
 .add-comment-btn {
     cursor: pointer;
     padding: 5px;
